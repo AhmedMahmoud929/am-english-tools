@@ -5,8 +5,8 @@ import { Poppins } from "next/font/google";
 import ReactQueryProvider from "@/providers/ReactQueryProvider";
 
 export const metadata: Metadata = {
-  title: "Cars Chatbot",
-  description: "Car chatbot assistant with AI",
+  title: "AM English",
+  description: "AI-Powered English tools created by Ahmed Mahmoud",
 };
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
