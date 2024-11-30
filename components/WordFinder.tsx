@@ -34,13 +34,13 @@ export default function WordFinder() {
   };
 
   return (
-    <div className="flex flex-col h-[calc(100vh-9rem)] gap-4">
+    <div className="flex flex-col h-[calc(100vh-13rem)] md:h-[calc(100vh-9rem)] gap-4">
       <Card>
         <CardHeader>
           <CardTitle>Word Finder 🔍</CardTitle>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleSubmit} className="flex space-x-2">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
             <Input
               type="text"
               placeholder="Enter a word"

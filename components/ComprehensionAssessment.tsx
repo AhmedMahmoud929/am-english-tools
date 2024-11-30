@@ -23,7 +23,7 @@ export default function ComprehensionAssessment() {
   };
 
   return (
-    <div className="flex flex-col gap-4 h-[calc(100vh-9rem)]">
+    <div className="flex flex-col gap-4 h-[calc(100vh-13rem)] md:h-[calc(100vh-9rem)]">
       <Card>
         <CardHeader>
           <CardTitle>Comprehension Assessment 📝</CardTitle>

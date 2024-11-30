@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 
 function NoticeModal() {
   const [isModalOpen, setIsModalOpen] = useState(
-    process.env.NODE_ENV === "production"
+    process.env.NODE_ENV !== "production"
   );
   const handleModalChange = () => setIsModalOpen(!isModalOpen);
 
@@ -20,8 +20,8 @@ function NoticeModal() {
     <Dialog open={isModalOpen} onOpenChange={handleModalChange}>
       <DialogContent
         className={cn(
-          "bg-gray-900 text-white",
-          "fixed top-44 lg:top-36 left-1/2 transform -translate-x-1/2",
+          "dark:bg-gray-900 dark:text-white",
+          "fixed top-44 lg:top-36 left-1/2 transform -translate-x-1/2 rounded-lg",
           "shadow-lg border border-gray-700",
           "w-[90%] lg:w-full"
         )}
@@ -39,7 +39,7 @@ function NoticeModal() {
         </DialogHeader>
         <DialogFooter>
           <Button
-            className="mt-2 bg-white ml-auto text-gray-900 hover:bg-gray-200"
+            className="mt-2 ml-auto"
             onClick={handleModalChange}
           >
             Understood
