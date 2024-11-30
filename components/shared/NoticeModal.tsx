@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 
 function NoticeModal() {
   const [isModalOpen, setIsModalOpen] = useState(
-    process.env.NODE_ENV !== "production"
+    process.env.NODE_ENV === "production"
   );
   const handleModalChange = () => setIsModalOpen(!isModalOpen);
 
