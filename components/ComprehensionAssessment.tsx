@@ -19,6 +19,7 @@ export default function ComprehensionAssessment() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!word.trim() || !example.trim()) return;
     refetch();
   };
 
@@ -61,8 +62,8 @@ export default function ComprehensionAssessment() {
             <CardTitle>Assessment Result</CardTitle>
             <div className="-mt-3">
               <div className="text-center">
-                <span className="text-2xl font-bold">
-                  <span className="text-5xl">
+                <span className="text-xl md:text-2xl font-bold">
+                  <span className="text-4xl md:text-5xl">
                     {isFetching ? "..." : result.score}
                   </span>
                   /100
